@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagu Indonesia - Ruang Nada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Memuat Ruang Nada...</p>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <header class="navbar">
+        <button id="menuButton">☰</button>
+        <h2>Ruang<span>Nada.</span></h2>
+        <p>Your Music Space</p>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <h3>MENU UTAMA</h3>
+
+        <a href="index.html">
+            <img src="images/icon_beranda.png" alt="">
+            Beranda
+        </a>
+
+        <a href="lagu_indo.html" class="active">
+            <img src="images/icon_indo.png" alt="">
+            Lagu Indonesia
+        </a>
+
+        <a href="lagu_inggris.html">
+            <img src="images/icon_inggris.png" alt="">
+            Lagu Inggris
+        </a>
+
+        <a href="kelompok.html">
+            <img src="images/icon_kelompok.png" alt="">
+            Identitas Kelompok
+        </a>
+    </aside>
+
+    <main class="container">
+
+        <section class="page-title">
+            <small>INDONESIAN MUSIC</small>
+            <h1>Kumpulan Lagu <span>Indonesia</span></h1>
+            <p>
+                Temukan lagu favoritmu berdasarkan judul,
+                penyanyi, atau genre.
+            </p>
+        </section>
+
+        <section class="table-box">
+
+            <div class="table-heading">
+                <div>
+                    <h2>Daftar Lagu Indonesia</h2>
+                    <p>Koleksi lagu pilihan dari musisi Indonesia.</p>
+                </div>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Cari judul / penyanyi / genre..."
+                >
+            </div>
+
+            <div class="table-scroll">
+                <table id="songTable">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Judul Lagu</th>
+                            <th>Penyanyi</th>
+                            <th>Genre</th>
+                            <th>Spotify</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr><td>1</td><td>Evaluasi</td><td>Hindia</td><td>Indie Pop / Alternative</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2dIBMHByUGcNPzmYBJ6OAj?utm_source=generator&si=00d77cb3a0b9405d" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>2</td><td>Secukupnya</td><td>Hindia</td><td>Indie Pop / Alternative</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5drW6PGRxkE6MxttzVLNk5?utm_source=generator&si=90aaeb0282344706" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>3</td><td>Rumah ke Rumah</td><td>Hindia</td><td>Indie Pop / Alternative</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2wAiFWjRupWmnDkQcu91MF?utm_source=generator&si=72b884d728a944b8" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>4</td><td>Bertaut</td><td>Nadin Amizah</td><td>Indie Folk / Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/630DpnzdfjdVqv2yLfPbAX?utm_source=generator&si=26411ba6a27442ed" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>5</td><td>Sorai</td><td>Nadin Amizah</td><td>Indie Folk / Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3ymuBMTviroWLuf1jMsMVf?utm_source=generator&si=5b2fe6e424f14559" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>6</td><td>Rumpang</td><td>Nadin Amizah</td><td>Indie Folk / Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2TRGNVokPnC2a2oHg5iv1H?utm_source=generator&si=c78bc494a31c4a9d" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>7</td><td>Asal Kau Bahagia</td><td>Armada</td><td>Pop-Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/79AlxPlv70kuRlsi2eZsnV?utm_source=generator&si=b587bbf0cc9941eb" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>8</td><td>Harusnya Aku</td><td>Armada</td><td>Pop-Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4NO6tr1qkrDQWgz0IEyxwE?utm_source=generator&si=1609a4b3d8324179" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>9</td><td>Apa Kabar Sayang</td><td>Armada</td><td>Pop-Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4o6EhGQmzoQZgwYqI6WD5s?utm_source=generator&si=72da9326c0104b9e" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>10</td><td>Sayang</td><td>Gamma1</td><td>Pop Melayu</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/637QnlvzKNLkPDMkVkVes3?utm_source=generator&si=4c5f3cfa14904453" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>11</td><td>Hidup Segan Mati Tak Mau</td><td>Gamma1</td><td>Pop Melayu</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/56mKXCWn1WqTZ1Uw24avZJ?utm_source=generator&si=c8203ecaf85148b9" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>12</td><td>1 atau 2</td><td>Gamma1</td><td>Pop Melayu</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0zQ6xD8mpXKaQRhfhEuIhS?utm_source=generator&si=5e7c0adc6dff4bd1" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>13</td><td>Teh Hijau</td><td>Tulus</td><td>Pop / Upbeat Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4R9G7azXaZe93KTX65P9fU?utm_source=generator&si=aa8e01c728614715" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>14</td><td>Gajah</td><td>Tulus</td><td>Pop / Upbeat Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7vZTvo2aJ6wHKCGjwjdWIf?utm_source=generator&si=703a4d96277b40cd" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>15</td><td>Hati-Hati di Jalan</td><td>Tulus</td><td>Pop / Upbeat Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2hHeGD57S0BcopfVcmehdl?utm_source=generator&si=25c089352c444a43" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>16</td><td>Sial</td><td>Mahalini</td><td>Pop / Soft Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6O0WEM0QNEhqpU50BKui7o?utm_source=generator&si=85992f3d6885483e" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>17</td><td>Kisah Sempurna</td><td>Mahalini</td><td>Pop / Soft Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6qolkjGnFjsui0h0bosp9p?utm_source=generator&si=b9369c1a2c964c0b" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>18</td><td>Bawa Dia Kembali</td><td>Mahalini</td><td>Pop / Soft Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/25M9piWxSsq0xLcjQW5yz6?utm_source=generator&si=340a3cb44e634645" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>19</td><td>Satu Irama</td><td>Iklim</td><td>Pop Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2issz38BXwljSRRPyrS0cB?utm_source=generator&si=6fb5611e5bd945cd" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>20</td><td>Pergimu Satu Tanda</td><td>Iklim</td><td>Soft Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1xLcGK1xWG3zaqGmNPPpSu?utm_source=generator&si=2ecbe95cc2134811" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>21</td><td>Serpihan Rindu</td><td>Iklim</td><td>Slow Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3cJE7bjd756wHPVwkFYJ6f?utm_source=generator&si=b13e88ea436f4179" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>22</td><td>Dan</td><td>Sheila On 7</td><td>Pop Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1MdjZzEInrmDBXf8zs0nKS?utm_source=generator&si=264ae45c71c4461c" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>23</td><td>Kita</td><td>Sheila On 7</td><td>Alternative Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0HiNUFD2ovdPC2p5tbnzCG?utm_source=generator&si=8c5e1952cd9943c4" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>24</td><td>Sephia</td><td>Sheila On 7</td><td>Pop Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5gkTGkjFB5wAd3mSBEcQPY?utm_source=generator&si=13e99abe9fb34eb9" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>25</td><td>2001x</td><td>Adrian Khalif</td><td>Pop R&B</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7EkTXoaED7peReoRytElSi?utm_source=generator&si=690c888b0dad4db6" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>26</td><td>Sialan</td><td>Adrian Khalif (feat.Juicy Luicy)</td><td>R&B / Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2aDgJHhAbABvdW9NszrAPQ?utm_source=generator&si=5b208d9043a94a09" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>27</td><td>Asumsi</td><td>Adrian Khalif (feat. Bernadya)</td><td>Pop Ballad</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/72DL0kjCGfA4qIDQnR88hT?utm_source=generator&si=880a97879a0a4ce6" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>28</td><td>Hapus aku</td><td>Nidji</td><td>Alternative Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0gwOixLwtjRpnC52W7aHYR?utm_source=generator&si=41d7ba37b7c64dab" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>29</td><td>Laskar Pelangi</td><td>Nidji</td><td>Pop Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0ejpHFKbEqTcNQ4OMBawrP?utm_source=generator&si=1e8be72c6d1a4e02" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>30</td><td>Rahasia Hati</td><td>Nidji</td><td>Alternative Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/48BWWtyjFE2le9sIqJitoL?utm_source=generator&si=8c662a9474994b31" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="no-result" id="noResult">Lagu tidak ditemukan.</p>
+
+            <p class="table-note">
+                * Kamu bisa mendengarkan lagu langsung melalui player yang tersedia.
+                Perlu diketahui, pemutaran lagu mungkin hanya berupa cuplikan dan tidak tersedia secara full.
+                Jika ingin mendengarkan lagu secara lengkap, silakan buka melalui Spotify. 
+                Tekan tombol (+) untuk menyimpan lagu ke playlist Spotify. 
+                Selamat menikmati musik di RuangNada!
+            </p>
+
+        </section>
+
+        <footer>
+            © 2026 Ruang Nada | Kelompok 2 | Pemrograman Web I
+        </footer>
+
+    </main>
+
+    <script>
+        const loading = document.getElementById("loading");
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("overlay");
+
+        document.getElementById("menuButton").onclick = function() {
+            sidebar.classList.toggle("show");
+            overlay.classList.toggle("show");
+        };
+
+        overlay.onclick = function() {
+            sidebar.classList.remove("show");
+            overlay.classList.remove("show");
+        };
+
+        window.onload = function() {
+            setTimeout(function() {
+                loading.classList.add("hide");
+            }, 400);
+        };
+
+        document.querySelectorAll('a[href$=".html"]').forEach(function(link) {
+            link.onclick = function(e) {
+                if (this.href !== location.href) {
+                    e.preventDefault();
+                    loading.classList.remove("hide");
+
+                    setTimeout(function() {
+                        location.href = link.href;
+                    }, 200);
+                }
+            };
+        });
+
+        const searchInput = document.getElementById("searchInput");
+        const rows = document.querySelectorAll("#songTable tbody tr");
+
+        searchInput.addEventListener("keyup", function() {
+            let keyword = this.value.toLowerCase();
+            let found = 0;
+
+            rows.forEach(function(row) {
+                let match = row.innerText.toLowerCase().includes(keyword);
+                row.style.display = match ? "" : "none";
+
+                if (match) {
+                    found++;
+                }
+            });
+
+            document.getElementById("noResult").style.display =
+                found === 0 ? "block" : "none";
+        });
+    </script>
+
+</body>
+</html>

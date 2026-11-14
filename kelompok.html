@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identitas Kelompok - Ruang Nada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Memuat Ruang Nada...</p>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <header class="navbar">
+        <button id="menuButton">☰</button>
+        <h2>Ruang<span>Nada.</span></h2>
+        <p>Your Music Space</p>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <h3>MENU UTAMA</h3>
+
+        <a href="index.html">
+            <img src="images/icon_beranda.png" alt="">
+            Beranda
+        </a>
+
+        <a href="lagu_indo.html">
+            <img src="images/icon_indo.png" alt="">
+            Lagu Indonesia
+        </a>
+
+        <a href="lagu_inggris.html">
+            <img src="images/icon_inggris.png" alt="">
+            Lagu Inggris
+        </a>
+
+        <a href="kelompok.html" class="active">
+            <img src="images/icon_kelompok.png" alt="">
+            Identitas Kelompok
+        </a>
+    </aside>
+
+    <main class="container">
+
+        <section class="page-title">
+            <small>MEET OUR TEAM</small>
+            <h1>Identitas <span>Kelompok 2</span></h1>
+            <p>
+                Kenalan dengan lima anggota kelompok
+                pembuat website Ruang Nada.
+            </p>
+        </section>
+
+        <!-- FOTO KELOMPOK -->
+        <section class="team-photo">
+
+            <!-- GANTI FOTO KELOMPOK DI SINI -->
+            <img src="images/foto_kelompok.jpg" alt="Foto Kelompok">
+
+            <div>
+                <small>OUR TEAM</small>
+                <h2>Kelompok Ruang Nada</h2>
+                <p>
+                    Kami adalah kelompok yang membuat website
+                    Ruang Nada sebagai bagian dari tugas
+                    mata kuliah Pemrograman Web I.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- DAFTAR ANGGOTA -->
+        <section class="members">
+
+            <div class="section-title">
+                <small>THE MEMBERS</small>
+                <h2>Anggota Kelompok</h2>
+                <p>Kenali anggota di balik pembuatan Ruang Nada.</p>
+            </div>
+
+            <div class="member-list">
+
+                <div class="member-card">
+                    <img src="images/foto_nabila.jpg" alt="Anggota 1">
+                    <h3>Nabila Syafira</h3>
+                    <p>NIM: 09010282630040</p>
+                </div>
+
+                <div class="member-card">
+                    <img src="images/foto_biul.jpg" alt="Anggota 2">
+                    <h3>Rabiul Awal Fitri</h3>
+                    <p>NIM: 09010182630008</p>
+                </div>
+
+                <div class="member-card">
+                    <img src="images/foto_el.jpg" alt="Anggota 3">
+                    <h3>Elmila Kirana</h3>
+                    <p>NIM: 09010182630034</p>
+                </div>
+
+                <div class="member-card">
+                    <img src="images/foto_kiki.jpg" alt="Anggota 4">
+                    <h3>Balqis Vutri Aqila</h3>
+                    <p>NIM: 09010182630020</p>
+                </div>
+
+                <div class="member-card">
+                    <img src="images/foto_niya.jpg" alt="Anggota 5">
+                    <h3>Umniyah Zahiroh</h3>
+                    <p>NIM: 09010182630024</p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            © 2026 Ruang Nada | Kelompok 2 | Pemrograman Web I
+        </footer>
+
+    </main>
+
+    <script>
+        const loading = document.getElementById("loading");
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("overlay");
+
+        document.getElementById("menuButton").onclick = function() {
+            sidebar.classList.toggle("show");
+            overlay.classList.toggle("show");
+        };
+
+        overlay.onclick = function() {
+            sidebar.classList.remove("show");
+            overlay.classList.remove("show");
+        };
+
+        window.onload = function() {
+            setTimeout(function() {
+                loading.classList.add("hide");
+            }, 400);
+        };
+
+        document.querySelectorAll('a[href$=".html"]').forEach(function(link) {
+            link.onclick = function(e) {
+                if (this.href !== location.href) {
+                    e.preventDefault();
+                    loading.classList.remove("hide");
+
+                    setTimeout(function() {
+                        location.href = link.href;
+                    }, 200);
+                }
+            };
+        });
+    </script>
+
+</body>
+</html>

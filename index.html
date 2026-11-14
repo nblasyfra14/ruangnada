@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Nada - Beranda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOADING -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Memuat Ruang Nada...</p>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <button id="menuButton">☰</button>
+        <h2>Ruang<span>Nada.</span></h2>
+        <p>Your Music Space</p>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <h3>MENU UTAMA</h3>
+
+        <a href="index.html" class="active">
+            <img src="images/icon_beranda.png" alt="">
+            Beranda
+        </a>
+
+        <a href="lagu_indo.html">
+            <img src="images/icon_indo.png" alt="">
+            Lagu Indonesia
+        </a>
+
+        <a href="lagu_inggris.html">
+            <img src="images/icon_inggris.png" alt="">
+            Lagu Inggris
+        </a>
+
+        <a href="kelompok.html">
+            <img src="images/icon_kelompok.png" alt="">
+            Identitas Kelompok
+        </a>
+    </aside>
+
+    <!-- KONTEN -->
+    <main class="container">
+
+        <!-- BANNER -->
+        <section class="hero">
+            <div class="hero-text">
+                <small>WELCOME TO RUANG NADA</small>
+
+                <h1>
+                    Temukan Lagu Favoritmu
+                    <p>Di Sini!</p>
+                </h1>
+
+                <p>
+                    Putar suasana hatimu, temukan lagu yang kamu suka, dan nikmati setiap nadanya bersama <span>RuangNada !</span>
+                </p>
+
+                <a href="lagu_indo.html" class="button">
+                    Jelajahi Lagu
+                </a>
+            </div>
+        </section>
+
+        <!-- KATEGORI -->
+        <section class="category">
+
+            <div class="section-title">
+                <small>EXPLORE YOUR MUSIC</small>
+                <h2>Pilih Kumpulan Lagu</h2>
+                <p>Temukan lagu sesuai dengan seleramu.</p>
+            </div>
+
+            <div class="category-list">
+
+                <a href="lagu_indo.html" class="category-card">
+                    <div class="category-icon">♪</div>
+                    <h3>Lagu Indonesia</h3>
+                    <p>
+                        Kumpulan lagu dari musisi Indonesia dengan berbagai genre menarik.
+                    </p>
+                    <b>Lihat Koleksi →</b>
+                </a>
+
+                <a href="lagu_inggris.html" class="category-card">
+                    <div class="category-icon">♫</div>
+                    <h3>English Songs</h3>
+                    <p>
+                        Explore a variety of international songs from your favorite artists
+                    </p>
+                    <b>Explore Collection →</b>
+                </a>
+
+            </div>
+        </section>
+
+        <footer>
+            © 2026 Ruang Nada | Kelompok 2 | Pemrograman Web I
+        </footer>
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const loading = document.getElementById("loading");
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("overlay");
+        const menuButton = document.getElementById("menuButton");
+
+        menuButton.onclick = function() {
+            sidebar.classList.toggle("show");
+            overlay.classList.toggle("show");
+        };
+
+        overlay.onclick = function() {
+            sidebar.classList.remove("show");
+            overlay.classList.remove("show");
+        };
+
+        window.onload = function() {
+            setTimeout(function() {
+                loading.classList.add("hide");
+            }, 400);
+        };
+
+        document.querySelectorAll('a[href$=".html"]').forEach(function(link) {
+            link.onclick = function(e) {
+                if (this.href !== location.href) {
+                    e.preventDefault();
+                    loading.classList.remove("hide");
+
+                    setTimeout(function() {
+                        location.href = link.href;
+                    }, 200);
+                }
+            };
+        });
+    </script>
+
+</body>
+</html>

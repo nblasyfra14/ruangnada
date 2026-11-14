@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Songs - Ruang Nada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Memuat Ruang Nada...</p>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <header class="navbar">
+        <button id="menuButton">☰</button>
+        <h2>Ruang<span>Nada.</span></h2>
+        <p>Your Music Space</p>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <h3>MENU UTAMA</h3>
+
+        <a href="index.html">
+            <img src="images/icon_beranda.png" alt="">
+            Beranda
+        </a>
+
+        <a href="lagu_indo.html">
+            <img src="images/icon_indo.png" alt="">
+            Lagu Indonesia
+        </a>
+
+        <a href="lagu_inggris.html" class="active">
+            <img src="images/icon_inggris.png" alt="">
+            Lagu Inggris
+        </a>
+
+        <a href="kelompok.html">
+            <img src="images/icon_kelompok.png" alt="">
+            Identitas Kelompok
+        </a>
+    </aside>
+
+    <main class="container">
+
+        <section class="page-title">
+            <small>INTERNATIONAL MUSIC</small>
+            <h1>English <span>Song List</span></h1>
+            <p>
+                Discover your favorite songs by title,
+                artist, or genre.
+            </p>
+        </section>
+
+        <section class="table-box">
+
+            <div class="table-heading">
+                <div>
+                    <h2>English Song Collection</h2>
+                    <p>A collection of international songs.</p>
+                </div>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search title / artist / genre..."
+                >
+            </div>
+
+            <div class="table-scroll">
+                <table id="songTable">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Song Title</th>
+                            <th>Artist</th>
+                            <th>Genre</th>
+                            <th>Spotify</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr><td>1</td><td>Happier</td><td>Marshmello (feat. Bastille)</td><td>Pop / EDM</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7BqHUALzNBTanL6OvsqmC1?utm_source=generator&si=7e61d804e228465d" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>2</td><td>Silence</td><td>Marshmello (feat. Khalid)</td><td>Future Bass / R&B</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7vGuf3Y35N4wmASOKLUVVU?utm_source=generator&si=e2d3fa930a634f23" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>3</td><td>HARLEY QUINN</td><td>Marshmello (feat. Fuerza Regida)</td><td>Latin</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6CvTEtGagmzQvkUzzyKR9k?utm_source=generator&si=5e684c2b7db54371" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>4</td><td>Video Games</td><td>Lana Del Rey</td><td>Baroque Pop / Trip Hop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0fBSs3fRoh1yJcne77fdu9?utm_source=generator&si=3b022f43b3ac456b" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>5</td><td>West Coast</td><td>Lana Del Rey</td><td>Dream Pop / Psychedelic Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5Y6nVaayzitvsD5F7nr3DV?utm_source=generator&si=71bfe006a3284342" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>6</td><td>Mariners Apartment Complex</td><td>Lana Del Rey</td><td>Folk / Orchestral Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6OG05bPAwUuV3OMvy2Vy1P?utm_source=generator&si=0f93c192f90b4325" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>7</td><td>Just the Way You Are</td><td>Bruno Mars</td><td>Pop / R&B</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3L1aanqHBTHmqN6pPcYBgJ?utm_source=generator&si=589afa20042647bb" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>8</td><td>Talking to the Moon</td><td>Bruno Mars</td><td>Pop Ballad</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6YKT5HoPwjTwhHiCNQsBMK?utm_source=generator&si=474fd3ffac734653" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>9</td><td>24K Magic</td><td>Bruno Mars</td><td>Funk / Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6b8Be6ljOzmkOmFslEb23P?utm_source=generator&si=49f7c815f04c49b6" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>10</td><td>Lovely</td><td>Billie Eilish</td><td>Indie Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0u2P5u6lvoDfwTYjAADbn4?utm_source=generator&si=77e89aade1a44529" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>11</td><td>Ocean Eyes</td><td>Billie Eilish</td><td>Dream Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7hDVYcQq6MxkdJGweuCtl9?utm_source=generator&si=b446746a11184899" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>12</td><td>Bad Guy</td><td>Billie Eilish</td><td>Electropop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2Fxmhks0bxGSBdJ92vM42m?utm_source=generator&si=ef576a7028b84719" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>13</td><td>Good 4 U</td><td>Olivia Rodrigo</td><td>Pop-Punk</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4ZtFanR9U6ndgddUvNcjcG?utm_source=generator&si=62d83ae26b2b4b5a" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>14</td><td>Traitor</td><td>Olivia Rodrigo</td><td>Indie Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5CZ40GBx1sQ9agT82CLQCT?utm_source=generator&si=badf98ae48ab4190" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>15</td><td>Drop Dead</td><td>Olivia Rodrigo</td><td>Pop-Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6gkbtMtioHgtyGjrMel6ei?utm_source=generator&si=8963e18b5e2048ec" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>16</td><td>Baby</td><td>Justin Bieber</td><td>Teen Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6epn3r7S14KUqlReYr77hA?utm_source=generator&si=4e42ee96f29e46ea" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>17</td><td>Never Say Never</td><td>Justin Bieber</td><td>Pop-Rock</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5GYbkDveRD2I8M5ZJ14hWn?utm_source=generator&si=36219078a3ea4a9d" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>18</td><td>Somebody to Love</td><td>Justin Bieber</td><td>Dance-Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3rLIv187BhjyweFe89SgLn?utm_source=generator&si=3b60fcf068cb4a59" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>19</td><td>ILYSB</td><td>LANY</td><td>Indie Pop / Synth-Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2btKtacOXuMtC9WjcNRvAA?utm_source=generator&si=81b77782dba449ee" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>20</td><td>Stuck</td><td>LANY</td><td>Indie Pop / Synth-Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0GfWxo8gFJKgQ96tBrq3qo?utm_source=generator&si=857dab3bf08a40e5" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>21</td><td>XXL</td><td>LANY</td><td>Indie Pop / Alternative Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3l1grOhgJQG4E1E2MjfHWG?utm_source=generator&si=656b4d21815e48d8" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>22</td><td>Begin Again</td><td>Taylor Swift</td><td>Country Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/05GsNucq8Bngd9fnd4fRa0?utm_source=generator&si=6ae60bc8053e4ae3" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>23</td><td>All Too Well</td><td>Taylor Swift</td><td>Soft Rock / Singer-Songwriter</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5enxwA8aAbwZbf5qCHORXi?utm_source=generator&si=f07a2e07695947c8" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>24</td><td>Daylight</td><td>Taylor Swift</td><td>Pop / Dream Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1fzAuUVbzlhZ1lJAx9PtY6?utm_source=generator&si=cbad72ac108340e6" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>25</td><td>We Don't Talk Anymore</td><td>(feat. Selena Gomez)</td><td>Tropical Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/06KyNuuMOX1ROXRhj787tj?utm_source=generator&si=761a1b5fe6f24c0f" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>26</td><td>See you again</td><td>Charlie Puth (feat. Wiz Khalifa)</td><td>Pop Rap / Hip-Hop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2JzZzZUQj3Qff7wapcbKjc?utm_source=generator&si=e48c2da6bca94833" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>27</td><td>One Call Away</td><td>Charlie Puth</td><td>Pop Ballad</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/37R0bQOQj5a7DOqh1TGzvB?utm_source=generator&si=e7b08ff4bb6c48d5" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>28</td><td>Apocalypse</td><td>Cigarettes After Sex</td><td>Dream Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1oAwsWBovWRIp7qLMGPIet?utm_source=generator&si=29d35920c9f24305" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>29</td><td>Sweet</td><td>Cigarettes After Sex</td><td>Ambient Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2KhrPRV0V1FS2l4eQMJUWt?utm_source=generator&si=6140153c6376463e" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                        <tr><td>30</td><td>Sunsetz</td><td>Cigarettes After Sex</td><td>Slowcore / Dream Pop</td><td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0yuAWlxq59xT3agQ965OxE?utm_source=generator&si=5eb71b1ad9524e7f" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="no-result" id="noResult">Song not found.</p>
+
+            <p class="table-note">
+                * You can listen to songs directly through the available player.
+                Please note that song playback may only be available as a preview and may not include the full version.
+                If you want to listen to the complete song, please open it on Spotify.
+                Press the (+) button to save the song to your Spotify playlist.
+                Enjoy the music on RuangNada!
+            </p>
+
+        </section>
+
+        <footer>
+            © 2026 Ruang Nada | Kelompok 2 | Pemrograman Web I
+        </footer>
+
+    </main>
+
+    <script>
+        const loading = document.getElementById("loading");
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("overlay");
+
+        document.getElementById("menuButton").onclick = function() {
+            sidebar.classList.toggle("show");
+            overlay.classList.toggle("show");
+        };
+
+        overlay.onclick = function() {
+            sidebar.classList.remove("show");
+            overlay.classList.remove("show");
+        };
+
+        window.onload = function() {
+            setTimeout(function() {
+                loading.classList.add("hide");
+            }, 400);
+        };
+
+        document.querySelectorAll('a[href$=".html"]').forEach(function(link) {
+            link.onclick = function(e) {
+                if (this.href !== location.href) {
+                    e.preventDefault();
+                    loading.classList.remove("hide");
+
+                    setTimeout(function() {
+                        location.href = link.href;
+                    }, 200);
+                }
+            };
+        });
+
+        const searchInput = document.getElementById("searchInput");
+        const rows = document.querySelectorAll("#songTable tbody tr");
+
+        searchInput.addEventListener("keyup", function() {
+            let keyword = this.value.toLowerCase();
+            let found = 0;
+
+            rows.forEach(function(row) {
+                let match = row.innerText.toLowerCase().includes(keyword);
+                row.style.display = match ? "" : "none";
+
+                if (match) {
+                    found++;
+                }
+            });
+
+            document.getElementById("noResult").style.display =
+                found === 0 ? "block" : "none";
+        });
+    </script>
+
+</body>
+</html>
